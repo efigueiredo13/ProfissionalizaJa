@@ -72,6 +72,15 @@ video {
 .showMessage {
     display: block;
     color: var(--whiteColor);
+    padding: 10px;
+    background: rgb(255, 0, 0);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.showMessage {
+    display: block;
+    color: var(--whiteColor);
     background: rgb(255, 0, 0);
     border-radius: 3px;
     text-align: center;
@@ -96,7 +105,8 @@ video {
 }
 
 //css das paginas
-.loginPage {
+.loginPage,
+.registerPage {
     height: 100vh;
     width: 100%;
     margin: auto;
@@ -285,13 +295,13 @@ video {
             }
         }
 
-        .forgotPassword{
+        .forgotPassword {
             font-size: 13px;
-            color:var(--blackColor);
+            color: var(--blackColor);
             opacity: .7;
             text-align: center;
 
-            a{
+            a {
                 text-decoration: underline;
                 cursor: pointer;
             }
@@ -299,4 +309,126 @@ video {
 
     }
 
+}
+
+// transformando em responsivo
+@media screen and (max-width:602px) {
+
+    .loginPage,
+    .registerPage {
+        .container {
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            padding: 1.5rem;
+
+            .videoDiv {
+                width: 100%;
+
+                .textDiv {
+                    .title {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        padding: 1rem;
+
+                    }
+                }
+
+                .footerDiv {
+                    .text {
+                        font-size: 12px;
+                    }
+
+                    .btn {
+                        padding: .4rem 1.5rem;
+                    }
+                }
+            }
+
+            .formDiv {
+                gap: 1rem;
+                transform: translateY(-.5rem);
+
+                .headerDiv {
+                    padding: 1rem 0;
+
+                    img {
+                        width: 40px;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                .form {
+                    gap: 5rem;
+
+                    .inputDiv {
+                        .input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:678px) {
+
+    .loginPage,
+    .registerPage {
+        .container {
+            .videoDiv {
+                .textDiv {
+                    .title {
+                        font-size: 25px;
+                    }
+                    p {
+                        padding: 1rem;
+                    }
+                }
+
+                .footerDiv {
+                    .text {
+                        font-size: 12px;
+                    }
+
+                    .btn {
+                        padding: .8rem 1.5rem;
+                    }
+                }
+            }
+
+            .formDiv {
+                .headerDiv {
+                    padding: 1.5rem 0;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+                .form {
+                    .inputDiv {
+                        .input {
+                            width: 100%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:927px) {
+
+    .loginPage,
+    .registerPage {
+        .container {
+            width: 85%;
+        }
+    }
 }

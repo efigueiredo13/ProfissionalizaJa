@@ -19,7 +19,7 @@ export const Login = () => {
       <div className='container flex'>
 
         <div className='videoDiv'>
-          <video src={video}> autoplay muted loop</video>
+          <video src={video} autoplay muted loop> </video>
 
           <div className='textDiv'>
             <h2 className='title'>Decida o seu futuro!</h2>
@@ -41,7 +41,7 @@ export const Login = () => {
           </div>
 
           <form action="" className='form grid'>
-            <span>Login status</span>
+            <span className='showMessage'>Login status</span>
 
             <div className="inputDiv">
               <label htmlFor="username"> Username </label>
