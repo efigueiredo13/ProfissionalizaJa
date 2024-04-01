@@ -111,7 +111,7 @@ video {
 .loginPage .container,
 .registerPage .container {
   height: 75vh;
-  width: 60%;
+  width: 70%;
   margin: auto;
   justify-content: space-between;
   border-radius: 10px;
@@ -223,7 +223,7 @@ video {
 }
 .loginPage .formDiv .form,
 .registerPage .formDiv .form {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .loginPage .formDiv .form .inputDiv .icon,
 .registerPage .formDiv .form .inputDiv .icon {
@@ -241,12 +241,12 @@ video {
   color: var(--blackColor);
   font-weight: 400;
   font-size: 14px;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
   display: block;
 }
 .loginPage .formDiv .form .inputDiv .input,
 .registerPage .formDiv .form .inputDiv .input {
-  gap: 0.5rem;
+  gap: 0.2rem 0;
   padding: 1rem;
   background: var(--whiteColor);
   border-radius: 10px;

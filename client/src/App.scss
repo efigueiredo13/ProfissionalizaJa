@@ -106,7 +106,7 @@ video {
 
 //css das paginas
 .loginPage,
-.registerPage {
+.registerPage{
     height: 100vh;
     width: 100%;
     margin: auto;
@@ -116,7 +116,7 @@ video {
 
     .container {
         height: 75vh;
-        width: 60%;
+        width: 70%;
         margin: auto;
         justify-content: space-between;
         border-radius: 10px;
@@ -234,7 +234,7 @@ video {
         }
 
         .form {
-            gap: 1rem;
+            gap: .5rem;
 
             .inputDiv {
                 .icon {
@@ -252,12 +252,12 @@ video {
                     color: var(--blackColor);
                     font-weight: 400;
                     font-size: 14px;
-                    padding: .5rem 0;
+                    padding: .2rem 0;
                     display: block;
                 }
 
                 .input {
-                    gap: .5rem;
+                    gap: .2rem 0;
                     padding: 1rem;
                     background: var(--whiteColor);
                     border-radius: 10px;
@@ -376,6 +376,7 @@ video {
         }
     }
 }
+
 @media screen and (max-width:678px) {
 
     .loginPage,
@@ -386,6 +387,7 @@ video {
                     .title {
                         font-size: 25px;
                     }
+
                     p {
                         padding: 1rem;
                     }
@@ -410,6 +412,7 @@ video {
                         font-size: 20px;
                     }
                 }
+
                 .form {
                     .inputDiv {
                         .input {

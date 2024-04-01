@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Register.css'
 import '../../App.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import Axios from 'axios'
 
 //importando os assets
 import video from '../../LoginAssets/video.mp4'
@@ -16,7 +17,38 @@ import { MdMarkEmailRead } from "react-icons/md";
 
 
 
-export const Register = () => {
+const Register = () => {
+
+  //useState para pegar os dados do formulario
+  const [email, setEmail] = useState('')
+  const [userName, setUserName] = useState('')
+  const [password, setPassword] = useState('')
+  const navigateTo = useNavigate()
+
+  //onclick -- criando o usuario
+
+  const createUser = (e) => {
+
+    e.preventDefault()
+
+    Axios.post('http://localhost:3002/register', {
+      //variaveis para ser adicionadas na rota
+      Email: email,
+      UserName: userName,
+      Password: password
+    }).then(() => {
+      // console.log('o usuario foi criado')
+      navigateTo('/')
+
+      //limpando valores dos inputs
+      setEmail('')
+      setPassword('')
+      setUserName('')
+    })
+  }
+
+ 
+
   return (
     <div className='registerPage flex'>
       <div className='container flex'>
@@ -44,39 +76,38 @@ export const Register = () => {
           </div>
 
           <form action="" className='form grid'>
-    
-          <div className="inputDiv">
-              <label htmlFor="username"> Username </label>
-              <div className="input flex">
-                <FaUserShield className="icon" />
-                <input type="text" id="username" placeholder='Enter username' />
-              </div>
-            </div>
 
             <div className="inputDiv">
               <label htmlFor="email"> Email </label>
               <div className="input flex">
                 <MdMarkEmailRead className="icon" />
-                <input type="email" id="email" placeholder='Enter Email' />
+                <input type="email" id="email" placeholder='Enter Email'
+                  onChange={(event) => { setEmail(event.target.value) }} />
+              </div>
+            </div>
+
+            <div className="inputDiv">
+              <label htmlFor="username"> Username </label>
+              <div className="input flex">
+                <FaUserShield className="icon" />
+                <input type="text" id="username" placeholder='Enter username'
+                  onChange={(event) => { setUserName(event.target.value) }} />
               </div>
             </div>
 
             <div className="inputDiv">
               <label htmlFor="password"> Password </label>
               <div className="input flex">
-                <BsFillShieldLockFill   className="icon" />
-                <input type="text" id="password" placeholder='Enter Password' />
+                <BsFillShieldLockFill className="icon" />
+                <input type="text" id="password" placeholder='Enter Password'
+                  onChange={(event) => { setPassword(event.target.value) }} />
               </div>
             </div>
 
-            <button type='submit' className='btn flex'>
+            <button type='submit' className='btn flex' onClick={createUser}>
               <span>Register</span>
-              <AiOutlineSwapRight   className="icon" />
+              <AiOutlineSwapRight className="icon" />
             </button>
-          
-            <span className='forgotPassword'>
-              Esqueceu sua senha? <a href=''>Clique aqui</a>
-            </span>
           </form>
         </div>
 
