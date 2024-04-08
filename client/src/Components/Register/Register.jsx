@@ -54,7 +54,7 @@ const Register = () => {
       <div className='container flex'>
 
         <div className='videoDiv'>
-          <video src={video} autoplay muted loop> </video>
+          <video src={video} autoPlay muted loop> </video>
 
           <div className='textDiv'>
             <h2 className='title'>Decida o seu futuro!</h2>
@@ -99,7 +99,7 @@ const Register = () => {
               <label htmlFor="password"> Password </label>
               <div className="input flex">
                 <BsFillShieldLockFill className="icon" />
-                <input type="text" id="password" placeholder='Enter Password'
+                <input type="password" id="password" placeholder='Enter Password'
                   onChange={(event) => { setPassword(event.target.value) }} />
               </div>
             </div>
