@@ -1,34 +1,45 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+import sistemasInformacao from "../Assets/sistemasdeinformacao.png";
+import cienciasComputacao from "../Assets/cienciascomputacao.png";
+import analise from "../Assets/ads.png";
+import gestao from "../Assets/gestao.jpg";
+import redes from "../Assets/redes.png";
 
 const Work = () => {
   const workInfoData = [
     {
-      image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      image: sistemasInformacao,
+      title: "Sistemas de informação",
+      text: "Aqui temos um curso para você que quer um bem completo buscando aprender tanto sobre programação, gestão e Design de sistemas, este curso entrega um leque de informações.",
     },
     {
-      image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      image: cienciasComputacao,
+      title: "Ciências da computação",
+      text: " Aqui você poderá focar diretamente na mágica da computação um curso muito mais técnico e objetivo na parte da programação. ",
     },
     {
-      image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      image: analise,
+      title: "Análise e desenvolvimento de sistemas",
+      text: "Aqui é para você que quer aprender sem ficar 4 anos no mesmo curso, este de 2 anos e meio entrega um leque de conhecimento principalmente e objetivamente na parte de programação FullStack.",
+    },
+    {
+      image: gestao,
+      title: "Gestão da Tecnologia da informação",
+      text: "  Aqui é para você aluno com um perfil de líder, que gosta de fazer projetos e tem facilidade com pessoas, aqui você aprende sobre como fazer uma boa gestão tecnológica. ",
+    },
+    {
+      image: redes,
+      title: "Redes de computadores",
+      text: "Aqui temos o que está por trás de toda a internet as redes, onde você poderá ver como funciona as configurações e descobrir a mágica de IP e rede.",
     },
   ];
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h1 className="primary-heading">How It Works</h1>
+        <p className="primary-subheading">Hora do trabalho</p>
+        <h1 className="primary-heading">Cursos Disponíveis </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        Aqui teremos os cursos que você pode escolher e tomar a melhor decisão:
         </p>
       </div>
       <div className="work-section-bottom">
