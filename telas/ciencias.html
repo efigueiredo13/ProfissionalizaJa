@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha da Ciência da Computação</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/telas.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
+  </style>
+</head>
+<body>
+
+
+  <div class="container-cabecalho">
+    <div class="container-cabecalho-menu">
+      <nav id="nav">
+        <img id="botao-menu" src="img/SVG/menu-svgrepo-com.svg">
+        <ul class="ul-menu">
+          <li class="li-menu"><a href="/index.html">DECIDAKI</a></li>
+          <li class="li-menu"><a href="/index.html#materia">CURSOS</a></li>
+          <li class="li-menu"><a href="/index.html#projetos">MATRICULA</a></li>
+          <li class="li-menu"><a href="/index.html#sobrenos">SOBRE NÓS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Trilha da Ciência da Computação</h1>
+
+    <div id="apresentacao" class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Bem-vindo à Trilha!</h2>
+            <p class="card-text">Olá, eu sou o Bit, seu guia nesta jornada pela Ciência da Computação. Vamos explorar juntos os conceitos fundamentais e as áreas mais fascinantes desta disciplina.</p>
+            <button class="btn btn-primary" onclick="showNextSection('introducao')">Começar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="/img/free.jpg" alt="Personagem Bit" class="img-fluid">
+      </div>
+    </div>
+
+    <div id="introducao" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Introdução à Ciência da Computação</h2>
+            <p class="card-text">A Ciência da Computação é o estudo dos princípios teóricos e práticos da informação e da computação. Ela abrange uma ampla gama de tópicos, desde algoritmos e estruturas de dados até sistemas operacionais, redes de computadores e inteligência artificial.</p>
+            <button class="btn btn-secondary" onclick="showPreviousSection()">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('algoritmos')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="algoritmos" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Algoritmos</h2>
+            <p class="card-text">Os algoritmos são sequências lógicas de instruções que resolvem um problema específico. Eles são fundamentais na Ciência da Computação e são a base para a programação de computadores.</p>
+            <button class="btn btn-secondary" onclick="showPreviousSection()">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('videoFinal')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videoFinal" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Vídeo Final</h2>
+            <p class="card-text">Parabéns por chegar até aqui! Assista a este vídeo final para obter uma visão geral da Ciência da Computação e se inspirar para continuar explorando esta fascinante área.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_AQUI" allowfullscreen></iframe>
+            </div>
+            <button class="btn btn-secondary" onclick="showPreviousSection()">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('conclusao')">Concluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="conclusao" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Conclusão</h2>
+            <p class="card-text">Parabéns por concluir a Trilha da Ciência da Computação! Espero que você tenha adquirido novos conhecimentos e insights sobre esta fascinante área. Continue explorando e aprendendo, pois a Ciência da Computação está em constante evolução.</p>
+            <button class="btn btn-secondary" onclick="showNextSection('apresentacao')">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="/javascript/script.js"></script>
+</body>
+</html>
