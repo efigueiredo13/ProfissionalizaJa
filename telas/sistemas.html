@@ -1,31 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apresentação de Cursos</title>
-  <link rel="stylesheet" href="css/telas.css">
+  <title>Trilha de Sistemas de Informação</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/telas.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
+  </style>
 </head>
-<body>
-  <div class="container my-5">
-    <h1 class="text-center mb-5">Apresentação de Cursos</h1>
 
-    <!-- Sistemas da Informação -->
-    <div class="row mb-5">
+<body>
+
+
+  <div class="container-cabecalho">
+    <div class="container-cabecalho-menu">
+      <nav id="nav">
+        <img id="botao-menu" src="img/SVG/menu-svgrepo-com.svg">
+        <ul class="ul-menu">
+          <li class="li-menu"><a href="/index.html">DECIDAKI</a></li>
+          <li class="li-menu"><a href="/index.html#materia">CURSOS</a></li>
+          <li class="li-menu"><a href="/index.html#projetos">MATRICULA</a></li>
+          <li class="li-menu"><a href="/index.html#sobrenos">SOBRE NÓS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Trilha de Sistemas de Informação</h1>
+
+    <div id="apresentacaoBsi" class="row">
       <div class="col-md-6">
-        <h2>Sistemas da Informação</h2>
-        <div class="course-description">
-          <p>O curso de Sistemas da Informação prepara profissionais para projetar, desenvolver e gerenciar sistemas de informação eficientes e seguros. Você aprenderá sobre análise de requisitos, modelagem de dados, desenvolvimento de software, gerenciamento de projetos, segurança da informação e muito mais.</p>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Bem-vindo à Trilha!</h2>
+            <p class="card-text">Olá, eu sou o Bit, seu guia nesta jornada pelo Bacharel em Sistemas de Informação.
+              Vamos explorar juntos os conceitos fundamentais e as áreas mais fascinantes desta disciplina.</p>
+            <button class="btn btn-primary" onclick="showNextSection('introducaoBsi')">Começar</button>
+          </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="/img/free.jpg" alt="Personagem Bit" class="img-fluid">
+      </div>
+    </div>
+
+    <div id="introducaoBsi" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Trilha de Sistemas de Informação</h2>
+            <p class="card-text">O campo de estudo em Sistemas de Informação se dedica à compreensão, desenvolvimento e
+              aplicação de sistemas computacionais em uma variedade de cenários. Esta disciplina engloba uma ampla gama
+              de conhecimentos, abordando tanto aspectos técnicos quanto a gestão de informações dentro de uma
+              empresa.<br>
+              <br>
+              Durante o curso, os alunos têm a oportunidade de desenvolver habilidades em programação, gestão de banco
+              de dados, redes de computadores, desenvolvimento de software, segurança da informação e gerenciamento de
+              projetos. A fusão dessas competências proporciona uma visão completa do ciclo de vida dos sistemas de
+              informação, desde sua concepção até sua implementação e manutenção.
+              <br>
+              <br>
+              Profissionais formados nessa área são indispensáveis no cenário contemporâneo, pois têm a capacidade de
+              criar e implementar soluções tecnológicas adaptadas às necessidades específicas das organizações. Eles
+              desempenham um papel fundamental na integração de tecnologias para aprimorar processos, impulsionar a
+              eficiência operacional e facilitar a tomada de decisões estratégicas.
+              <br>
+              <br>
+              Além dos aspectos técnicos, o curso também explora temas como análise de sistemas, gestão de dados,
+              inteligência artificial e inovações tecnológicas. A formação em Sistemas de Informação prepara os alunos
+              para enfrentar os desafios do mundo real, promovendo o desenvolvimento do pensamento crítico e a
+              habilidade de resolver problemas complexos.
+              <br>
+              <br>
+              O programa de Sistemas de Informação estuda as fases de desenvolvimento, gestão e otimização de sistemas
+              computacionais e bases de dados. Esta área busca integrar a tecnologia da informação às operações
+              organizacionais, visando aprimorar a eficiência, a produtividade e o processo de tomada de decisões dentro
+              das empresas.
+              <br>
+              <br>
+              Ao longo do curso, os alunos adquirem competências em diversas áreas, preparando-se para enfrentar os
+              desafios do mundo da tecnologia da informação. Dentre os principais tópicos abordados, destacam-se:</p>
+            <button class="btn btn-secondary" onclick="showPreviousSection()">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('algoritmosBsi')">Próximo</button>
+          </div>
         </div>
       </div>
     </div>
 
+    <div id="algoritmosBsi" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Principais tópicos trabalhados:</h2>
+            <p class="card-text">Programação: Os alunos são instruídos em linguagens cruciais de programação, incluindo
+              Java, Python, C++ e outras, visando o desenvolvimento da capacidade de criar e aprimorar algoritmos para
+              solucionar problemas computacionais.
+              <br>
+              <br>
+
+              Banco de Dados: Eles adquirem uma compreensão profunda dos sistemas de gerenciamento de banco de dados,
+              juntamente com a modelagem de dados, consultas SQL e design de bancos de dados, permitindo a organização
+              eficaz e segura de grandes volumes de informações.
+              <br>
+              <br>
+              Redes de Computadores: Estudo abrangente sobre a arquitetura, protocolos e segurança de redes, capacitando
+              os alunos a planejar, implementar e manter infraestruturas de redes eficientes e seguras.
+              <br>
+              <br>
+
+              Desenvolvimento de Software: Os alunos mergulham nas práticas de desenvolvimento de software, incluindo
+              metodologias ágeis, controle de versão, testes de software e princípios de programação.
+              <br>
+              <br>
+
+              Segurança da Informação: Abordagem dos fundamentos da segurança cibernética, políticas de segurança,
+              criptografia e medidas para proteger sistemas e dados contra ameaças digitais.
+              <br>
+              <br>
+
+              Gestão de Projetos: Introdução aos princípios de gestão de projetos de tecnologia da informação,
+              preparando os alunos para liderar e colaborar em equipes de desenvolvimento de software.
+              <br>
+              <br>
+
+              Análise de Sistemas: Estudo das técnicas de análise de sistemas, modelagem de processos e requisitos,
+              proporcionando uma compreensão sólida do ciclo de vida do desenvolvimento de sistemas de informação.
+              <br>
+              <br>
+
+              Inteligência Artificial: Exploração de conceitos fundamentais de inteligência artificial, aprendizado de
+              máquina e suas aplicações práticas em soluções tecnológicas avançadas.
+              <br>
+              <br>
+
+              Inovação Tecnológica: Acompanhamento das tendências emergentes, como computação em nuvem, Internet das
+              Coisas (IoT) e realidade virtual, para preparar os alunos para lidar com as constantes inovações no campo
+              da tecnologia.
+
+
+
+            </p>
+            <button class="btn btn-secondary" onclick="showPreviousSection()">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('videoFinalBsi')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videoFinalBsi" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Vídeo Final</h2>
+            <p class="card-text">Parabéns por chegar até aqui! Assista a este vídeo final para obter uma visão geral do
+              Bacharel em Sistemas de Informação e se inspirar para continuar explorando esta fascinante área.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+                allowfullscreen></iframe>
+            </div>
+            <button class="btn btn-secondary" onclick="showPreviousSection()">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('conclusaoBsi')">Concluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="conclusaoBsi" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Conclusão</h2>
+            <p class="card-text">Parabéns por concluir a Trilha de Sistemas de Informação! Espero que você tenha
+              adquirido novos conhecimentos e insights sobre esta fascinante área. Continue explorando e aprendendo,
+              pois o Bacharel em Sistemas de Informação está em constante evolução.</p>
+            <button class="btn btn-secondary" onclick="showNextSection('apresentacaoBsi')">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="/javascript/script.js"></script>
 </body>
+
 </html>
