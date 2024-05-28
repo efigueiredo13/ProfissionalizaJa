@@ -28,10 +28,40 @@ function showPreviousSection() {
 
 function getPreviousSection(sectionId) {
   const sections = [
+    //bcc
     'introducao',
     'algoritmos',
     'estruturasDados',
     'videoFinal',
-    'apresentacao'
+    'apresentacao',
+
+    // ads
+    'introducaoAds',
+    'algoritmosAds',
+    'estruturasDadosAds',
+    'videoFinalAds',
+    'apresentacaoAds',
+
+    // bsi
+    'introducaoBsi',
+    'algoritmosBsi',
+    'estruturasDadosBsi',
+    'videoFinalBsi',
+    'apresentacaoBsi',
+
+    // Engenharia
+    'introducaoEngenharia',
+    'algoritmosEngenharia',
+    'estruturasDadosEngenharia',
+    'videoFinalEngenharia',
+    'apresentacaoEngenharia',
+
+    // redes
+    'introducaoRedes',
+    'algoritmosRedes',
+    'estruturasDadosRedes',
+    'videoFinalRedes',
+    'apresentacaoRedes'
+
   ]
 }
