@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/public/css/images/favicon/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Já tem um cadastro?</p>
+                <p class="description description-primary">Por favor entre com suas credenciais</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">criar conta</h2>
+                <form class="form" id="registerForm">
+                    <label class="label-input" for="registerUsername">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" id="registerUsername" name="username" placeholder="Nome" required>
+                    </label>
+                    
+                    <label class="label-input" for="registerEmail">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" id="registerEmail" name="email" placeholder="E-mail" required>
+                    </label>
+                    
+                    <label class="label-input" for="registerPassword">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" id="registerPassword" name="password" placeholder="Senha" required>
+                    </label>
+                    
+                    <button type="submit" class="btn btn-second">Cadastrar</button>        
+                </form>
+            </div>
+        </div>
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Seja Bem vindo!</h2>
+                <p class="description description-primary">Não tem um cadastro ainda?</p>
+                <p class="description description-primary">Clique no botão abaixo e crie o seu!</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entrar</h2>
+                <form class="form" id="loginForm">
+                    <label class="label-input" for="loginEmail">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" id="loginEmail" name="email" placeholder="E-mail" required>
+                    </label>
+                
+                    <label class="label-input" for="loginPassword">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" id="loginPassword" name="password" placeholder="Senha" required>
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu a senha?</a>
+                    <button type="submit" class="btn btn-second">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/app.js"></script>
+</body>
+</html>

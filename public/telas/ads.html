@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de ADS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="/public/css/telas.css">
+  <link rel="shortcut icon" href="/public/css/images/favicon/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container-cabecalho">
+    <div class="container-cabecalho-menu">
+      <nav id="nav">
+        <img id="botao-menu" src="/public/css/images/SVG/menu-svgrepo-com.svg">
+        <ul class="ul-menu">
+          <li class="li-menu"><a href="/public/index.html">DECIDAKI</a></li>
+          <li class="li-menu"><a href="/public/index.html#materia">CURSOS</a></li>
+          <li class="li-menu"><a href="/public/index.html#projetos">MATRICULA</a></li>
+          <li class="li-menu"><a href="/public/index.html#sobrenos">SOBRE NÓS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Trilha ADS</h1>
+
+    <div id="apresentacaoAds" class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Bem-vindo à Trilha de Ads!</h2>
+            <p class="card-text">Olá, eu sou o Bit, seu guia nesta jornada pela Análise e desenolvimento de sistemas.
+              Vamos explorar juntos os conceitos fundamentais e as áreas mais fascinantes desta disciplina.</p>
+            <button class="btn btn-primary" onclick="showNextSection('trilhaAds')">Começar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="/public/css/images/free.jpg" alt="Personagem Bit" class="img-fluid">
+      </div>
+    </div>
+
+    <div id="trilhaAds" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Trilha de ADS</h2>
+            <p class="card-text">O curso de Análise e Desenvolvimento de Sistemas tem duração média de 2 anos e oferece
+              uma grade curricular intensiva em disciplinas das Ciências Exatas, como matemática aplicada à computação,
+              algoritmos, programação, elaboração de manuais, desenho e construção de sistemas computacionais, análise
+              de dados e solução de uma ampla gama de problemas humanos.
+
+            </p>
+            <button class="btn btn-secondary" onclick="showNextSection('apresentacaoAds')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('principaisAds')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="principaisAds" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Principais tópicos trabalhados</h2>
+            <p class="card-text">
+              Essa área tem como principal objetivo fornecer soluções informatizadas para problemas diversos.
+              Concentra-se na criação de softwares, aplicativos e bancos de dados que atendam às necessidades
+              específicas dos usuários e das organizações.
+            </p>
+            Durante o curso, os estudantes adquirem habilidades técnicas e analíticas para desenvolver sistemas
+            eficientes e eficazes, capazes de otimizar processos, melhorar a produtividade e facilitar a tomada de
+            decisões.
+            </p>
+            Com uma abordagem centrada no usuário e orientada para a resolução de problemas, a área de Análise e
+            Desenvolvimento de Sistemas prepara os alunos para enfrentar os desafios do mundo real, proporcionando-lhes
+            as ferramentas necessárias para se destacarem em um mercado cada vez mais competitivo e tecnológico.
+            </p>
+            <button class="btn btn-secondary" onclick="showNextSection('trilhaAds')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('videoFinalAds')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videoFinalAds" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Vídeo Final</h2>
+            <p class="card-text">Parabéns por chegar até aqui! Assista a este vídeo final para obter uma visão geral de
+              ADS e se inspirar para continuar explorando esta fascinante área.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+                allowfullscreen></iframe>
+            </div>
+            <button class="btn btn-secondary" onclick="showNextSection('principaisAds')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('conclusaoAds')">Concluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="conclusaoAds" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Conclusão</h2>
+            <p class="card-text">Parabéns por concluir a Trilha de ADS! Espero que você tenha adquirido novos
+              conhecimentos e insights sobre esta fascinante área. Continue explorando e aprendendo, pois a Análise e
+              Desenvolvimento de Sistemas está em constante evolução.</p>
+            <button class="btn btn-secondary" onclick="showNextSection('apresentacaoAds')">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="/public/js/script.js"></script>
+  <script>
+    // Verificar se o usuário está autenticado
+    document.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem('isAuthenticated') !== 'true') {
+            alert('Você precisa estar logado para acessar esta página.');
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        }
+    });
+</script>
+</body>
+
+</html>

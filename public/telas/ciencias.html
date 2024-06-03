@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha da Ciência da Computação</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="/public/css/telas.css">
+  <link rel="shortcut icon" href="/public/css/images/favicon/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container-cabecalho">
+    <div class="container-cabecalho-menu">
+      <nav id="nav">
+        <img id="botao-menu" src="/public/css/images/SVG/menu-svgrepo-com.svg">
+        <ul class="ul-menu">
+          <li class="li-menu"><a href="/public/index.html">DECIDAKI</a></li>
+          <li class="li-menu"><a href="/public/index.html#materia">CURSOS</a></li>
+          <li class="li-menu"><a href="/public/index.html#projetos">MATRICULA</a></li>
+          <li class="li-menu"><a href="/public/index.html#sobrenos">SOBRE NÓS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Trilha da Ciência da Computação</h1>
+
+    <div id="trilhaCiencias" class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Bem-vindo à Trilha!</h2>
+            <p class="card-text">Olá, eu sou o Bit, seu guia nesta jornada pela Ciência da Computação. Vamos explorar
+              juntos os conceitos fundamentais e as áreas mais fascinantes desta disciplina.</p>
+            <button class="btn btn-primary" onclick="showNextSection('introducaoCiencias')">Começar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="/public/css/images/free.jpg" alt="Personagem Bit" class="img-fluid">
+      </div>
+    </div>
+
+    <div id="introducaoCiencias" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Introdução à Ciência da Computação</h2>
+            <p class="card-text">A área de Estudos Computacionais se dedica à investigação e criação de algoritmos,
+              sistemas de software, hardware, redes de computadores e todas as áreas relacionadas à computação e
+              tecnologia da informação.
+              <br>
+              <br>
+              O programa de Estudos Computacionais abarca uma ampla gama de aspectos tanto teóricos quanto práticos
+              ligados à computação e tecnologia da informação. Normalmente oferecido em instituições de ensino superior,
+              como universidades e faculdades, o curso tem uma duração média de quatro a cinco anos, dependendo do país
+              e da estrutura curricular específica.
+              <br>
+              <br>
+              Profissionais formados em Estudos Computacionais têm a responsabilidade de criar desde ferramentas
+              simples, como aplicativos financeiros para controle de gastos pessoais, até sistemas complexos de gestão
+              de produção ou processamento de dados.
+              <br>
+              <br>
+
+              Trabalhando em equipes de desenvolvimento de software ou em departamentos de Pesquisa e Desenvolvimento
+              (P&D), os especialistas em computação são indispensáveis para qualquer empresa que faça uso de tecnologia
+              da informação. O setor industrial, em particular, demanda uma parcela significativa desses profissionais.
+              <br>
+              <br>
+
+              É recomendável possuir uma sólida base em matemática e lógica antes de ingressar no curso, pois os alunos
+              serão expostos a conceitos fundamentais da computação, requerendo familiaridade com álgebra, cálculo e
+              princípios lógicos.
+              <br>
+              <br>
+
+              Estar preparado para uma aprendizagem contínua é crucial, já que a tecnologia avança rapidamente.
+              Acompanhar as tendências e progressos no campo da computação é essencial para manter-se atualizado e
+              competitivo neste mercado em constante evolução.
+
+
+
+            </p>
+            <button class="btn btn-secondary" onclick="showNextSection('trilhaCiencias')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('pricipaisCiencias')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pricipaisCiencias" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Principais tópicos trabalhados: </h2>
+            <p class="card-text">Base Fundamentais em Matemática e Lógica: Essenciais para compreensão dos princípios
+              dos sistemas computacionais.
+              <br>
+              <br>
+              Teoria da Computação: Exploração dos fundamentos da computação, como algoritmos, estruturas de dados,
+              complexidade computacional e teoria dos autômatos. Aprendizado de design e análise de algoritmos para
+              resolver diversos problemas computacionais.
+              <br>
+              <br>
+              Programação: Parte essencial do curso, onde os alunos aprendem várias linguagens, técnicas e paradigmas de
+              desenvolvimento de software. Adquire experiência prática em escrever código, depurar programas e
+              desenvolver soluções de software eficientes e escaláveis.
+              <br>
+              <br>
+              Sistemas Operacionais e Redes de Computadores: Disciplinas que fornecem compreensão sobre o funcionamento
+              dos sistemas computacionais em nível de sistema e comunicação por meio de redes. Aborda conceitos como
+              gerenciamento de memória, sistemas de arquivos, protocolos de rede e segurança.
+              <br>
+              <br>
+              Especialização: À medida que avançam no curso, os alunos podem escolher áreas de especialização de acordo
+              com seus interesses e objetivos de carreira. Possíveis áreas incluem inteligência artificial, aprendizado
+              de máquina, computação gráfica, segurança cibernética, bancos de dados e sistemas distribuídos.
+              <br>
+              <br>
+              Projetos Práticos e Oportunidades de Pesquisa: Enfatiza a importância de projetos práticos, estágios e
+              oportunidades de pesquisa para aplicação dos conhecimentos em situações do mundo real. Desenvolvimento de
+              habilidades práticas e colaborativas. </p>
+            <button class="btn btn-secondary" onclick="showNextSection('introducaoCiencias')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('videoFinal')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videoFinal" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Vídeo Final</h2>
+            <p class="card-text">Parabéns por chegar até aqui! Assista a este vídeo final para obter uma visão geral da
+              Ciência da Computação e se inspirar para continuar explorando esta fascinante área.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+                allowfullscreen></iframe>
+            </div>
+            <button class="btn btn-secondary" onclick="showNextSection('pricipaisCiencias')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('conclusao')">Concluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="conclusao" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Conclusão</h2>
+            <p class="card-text">Parabéns por concluir a Trilha da Ciência da Computação! Espero que você tenha
+              adquirido novos conhecimentos e insights sobre esta fascinante área. Continue explorando e aprendendo,
+              pois a Ciência da Computação está em constante evolução.</p>
+            <button class="btn btn-secondary" onclick="showNextSection('trilhaCiencias')">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="/public/js/script.js"></script>
+  <script>
+    // Verificar se o usuário está autenticado
+    document.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem('isAuthenticated') !== 'true') {
+            alert('Você precisa estar logado para acessar esta página.');
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        }
+    });
+</script>
+</body>
+
+</html>

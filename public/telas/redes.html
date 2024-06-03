@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de Redes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="/public/css/telas.css">
+  <link rel="shortcut icon" href="/public/css/images/favicon/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container-cabecalho">
+    <div class="container-cabecalho-menu">
+      <nav id="nav">
+        <img id="botao-menu" src="/public/css/images/SVG/menu-svgrepo-com.svg">
+        <ul class="ul-menu">
+          <li class="li-menu"><a href="/public/index.html">DECIDAKI</a></li>
+          <li class="li-menu"><a href="/public/index.html#materia">CURSOS</a></li>
+          <li class="li-menu"><a href="/public/index.html#projetos">MATRICULA</a></li>
+          <li class="li-menu"><a href="/public/index.html#sobrenos">SOBRE NÓS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Trilha Redes</h1>
+
+    <div id="apresentacaoRedes" class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Bem-vindo à Trilha de Redes!</h2>
+            <p class="card-text">Olá, eu sou o Bit, seu guia nesta jornada pelas Redes. Vamos explorar juntos os
+              conceitos fundamentais e as áreas mais fascinantes desta disciplina.</p>
+            <button class="btn btn-primary" onclick="showNextSection('introducaoRedes')">Começar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="/public/css/images/free.jpg" alt="Personagem Bit" class="img-fluid">
+      </div>
+    </div>
+
+    <div id="introducaoRedes" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Trilha de Redes</h2>
+            <p class="card-text">
+              O profissional de Redes de Computadores pode trabalhar em empresas de planejamento, desenvolvimento de
+              projetos, assistência técnica e consultoria. Ele também pode desempenhar suas funções nas empresas de
+              tecnologia e nas dos setores de indústria, comércio e serviços
+            </p>
+            <button class="btn btn-secondary" onclick="showNextSection('apresentacaoRedes')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('principaisRedes')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="principaisRedes" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Principais tópicos trabalhados</h2>
+            <p class="card-text">
+              O tecnólogo em Redes de Computadores administra ambientes computacionais.
+
+              Ele implanta e documenta rotinas e projetos e controla os níveis de serviço de sistemas operacionais,
+              banco de dados e redes.
+
+              imensionar redes, calculando a infraestrutura necessária, incluindo equipamentos e softwares, para
+              suportar os requisitos de comunicação de dados de uma organização.
+
+              Elaborar especificações técnicas detalhadas para a implementação de redes, garantindo que as soluções
+              propostas atendam aos requisitos de desempenho, segurança e escalabilidade.
+            </p>
+
+            Avaliar e implementar soluções de segurança para proteger as redes contra ameaças externas e internas,
+            incluindo o uso de firewalls, sistemas de detecção de intrusão e políticas de segurança.
+
+            Desenvolver e documentar projetos de rede, utilizando ferramentas de design e simulação para criar
+            representações precisas das redes propostas.
+
+            Gerenciar projetos de redes, aplicando metodologias de gestão para assegurar que os projetos sejam
+            completados dentro do escopo, prazo e orçamento estabelecidos.
+            </p>
+            Integrar redes de computadores, facilitando a comunicação e o compartilhamento de recursos entre diferentes
+            sistemas e plataformas.
+
+            Monitorar e avaliar o desempenho da rede, utilizando softwares especializados para identificar gargalos,
+            falhas e oportunidades de otimização.
+
+            Propor melhorias na qualidade de serviço (QoS), ajustando configurações de rede para priorizar tráfego,
+            reduzir latências e melhorar a experiência do usuário.
+
+            Realizar vistorias e perícias técnicas, oferecendo avaliações profissionais sobre a configuração, desempenho
+            e segurança das redes existentes.
+
+            </p>
+            <button class="btn btn-secondary" onclick="showNextSection('introducaoRedes')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('videoFinalRedes')">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="videoFinalRedes" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Vídeo Final</h2>
+            <p class="card-text">Parabéns por chegar até aqui! Assista a este vídeo final para obter uma visão geral de
+              redes e se inspirar para continuar explorando esta fascinante área.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+                allowfullscreen></iframe>
+            </div>
+            <button class="btn btn-secondary" onclick="showNextSection('principaisRedes')">Voltar</button>
+            <button class="btn btn-primary" onclick="showNextSection('conclusaoRedes')">Concluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="conclusaoRedes" class="row mt-5 d-none">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Conclusão</h2>
+            <p class="card-text">Parabéns por concluir a Trilha de redes! Espero que você tenha adquirido novos
+              conhecimentos e insights sobre esta fascinante área. Continue explorando e aprendendo, pois as redes estão
+              em constante evolução.</p>
+            <button class="btn btn-secondary" onclick="showNextSection('apresentacaoRedes')">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="/public/js/script.js"></script>
+  <script>
+    // Verificar se o usuário está autenticado
+    document.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem('isAuthenticated') !== 'true') {
+            alert('Você precisa estar logado para acessar esta página.');
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        }
+    });
+</script>
+</body>
+
+</html>
