@@ -12,9 +12,10 @@ app.use(cors());
 app.use(express.static('public'));
 
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: '127.0.0.1', // especificando o IP do servidor
     user: 'root', // altere para seu usuário do MySQL
-    database: 'decidakidb'
+    database: 'decidakidb',
+    port: 3306 // especificando a porta do MySQL
 });
 
 db.connect((err) => {
@@ -63,6 +64,6 @@ app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => { // modificando para escutar em todas as interfaces de rede
     console.log(`Server is running on port ${port}`);
 });
